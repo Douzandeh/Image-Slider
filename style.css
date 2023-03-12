@@ -23,3 +23,18 @@ body{
 	padding: 30px;
 	box-shadow: 0 15px 30px rgba(0,0,0,0.3)
 }
+
+.image-container{
+	position: relative;
+	width: 100%;
+}
+
+img{
+	width: 100%;
+	position: relative;
+	display: none;	
+}
+
+.active{
+	display: block;
+}
