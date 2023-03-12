@@ -38,3 +38,47 @@ img{
 .active{
 	display: block;
 }
+
+.dot-container{
+	width: 150px;
+	margin: 20px auto 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+button{
+	outline: none;
+	cursor: pointer;
+}
+
+.dot-container button{
+	height: 13px;
+	width: 13px;
+	border-radius: 50%;
+	border:3px solid #8052ec;
+	background-color: transparent;
+}
+
+#prev , #next{
+	height: 40px;
+	width: 40px;
+	position: absolute;
+	background-color: #8052ec;
+	color: #ffffff;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	border:none;
+	border-radius: 3px;
+	font-size: 18px;
+	font-weight: bolder;
+}
+
+#prev{
+	left: 15px;
+}
+
+#next{
+	right: 15px;
+}
