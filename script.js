@@ -2,7 +2,7 @@ let i = 0 // current slide
 let j = 4 // total slides
 
 const dots = document.querySelectorAll(".dot-container button");
-
+const images = document.querySelectorAll(".image-container img");
 
 function next () {
 	document.getElementById("content" + (i+1)).classList.remove("active")
@@ -23,4 +23,13 @@ function indicator (num) {
 		dot.style.backgroundColor = 'transparent'
 	});
 	document.querySelector(".dot-container button:nth-child(" + num + ")").style.backgroundColor = "#8052ec"
+}
+
+function dot (index) {
+	images.forEach(function (image) {
+		image.classList.remove("active");
+	})	
+	document.getElementById("content" + index).classList.add("active");
+	i = index - 1;
+	indicator(index);
 }
